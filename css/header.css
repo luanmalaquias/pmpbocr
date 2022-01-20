@@ -1,0 +1,31 @@
+.flex-dashboard header {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  height:50px;
+  padding:10px 30px;
+  background:#b71c1c; 
+}
+
+.flex-dashboard header a {
+  text-decoration:none;
+  color:#cccccc;
+}
+
+.flex-dashboard header a >svg {
+  background:#b71c1c;
+  margin-right:5px;
+}
+
+@media screen and (min-width: 0px){
+  .flex-dashboard header{
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px){    
+  .flex-dashboard header{
+    height: 50px;
+  }
+}

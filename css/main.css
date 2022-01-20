@@ -1,0 +1,134 @@
+a{
+  text-decoration: none;
+}
+main{
+  display:block;
+  height:100%;  
+  background-image: url("../images/insignia-transparente.png");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: auto;
+  background-color: #ededed;
+}
+
+main .main-content {
+  padding:30px;
+  width:100%;
+  overflow-y: auto;  
+  height: 88%;
+}
+
+.main-content .panel {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  margin:30px 0px;
+  overflow-y: hidden;
+  box-shadow: 0px 5px 1px rgb(27, 27, 27);
+}
+
+.main-content .panel:hover{
+  background-color: #de2727;
+  box-shadow: 0px 0px 0px rgb(27, 27, 27);
+}
+
+.main-content::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar-thumb{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+.panel-row {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+}
+
+.panel-50 {
+  width:45%;
+  height:100px;
+  border-radius: 20px;
+}
+
+.panel-row a {
+  background: #b71c1c; 
+
+  color:#fff;
+}
+.panel-row a:hover {
+  transform:scale(1.10);
+  transition:0.2s
+}
+
+@media screen and (min-width: 0px){
+  main{
+    width: 100%;
+  }
+  main .main-content{
+    padding: 0px;
+  }
+  .panel-row{
+    display: contents;
+    text-align: center;
+    align-items: center;
+  }
+  .panel-50{
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .main-content .panel {
+    margin-inline: 50px;
+  }
+  .painel-dashboard{
+    margin-top: 100px;
+  }
+  #panel-row-usuario{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  main{
+    width: calc(100% - 300px);
+  }
+  main .main-content{
+    height: 92%;
+  }
+  .panel-row{
+    display: contents;
+  }
+  .panel-50{
+    width: 45%;
+    height: 100px;
+    margin-bottom: auto;
+  }
+  .main-content .panel {
+    margin: 15px 0px;
+    width: 100%;    
+    border-radius:5px;
+  }
+  .painel-dashboard{
+    padding-top: 5%;
+    margin: 0 25%;
+  }
+  main{    
+    background-size: auto;
+  }
+  #panel-row-usuario{
+    display: none;
+  }
+}
